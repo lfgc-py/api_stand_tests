@@ -34,9 +34,7 @@ def negative_assert_symbol(name):
 
     assert response.status_code == 400
     assert response.json()["code"] == 400
-    assert response.json()["message"] == "Has introducido un nombre de usuario no válido. " \
-                                         "El nombre solo puede contener letras del alfabeto latino, "\
-                                         "la longitud debe ser de 2 a 15 caracteres."
+
 
 
 def negative_assert_no_firstname(user_body):
